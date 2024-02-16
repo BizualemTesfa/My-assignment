@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment for modu-2</title>
+    <style>
+        *{
+    box-sizing: border-box;
+}
+body{
+    margin: 0; 
+}
+h1{
+    text-align: center;
+}
+
+#section1{
+    margin: auto;
+    width: 90%;
+    position: relative;
+    border: 1px solid black;
+    background-color: lightgrey;
+}
+#section2{
+    margin: auto;
+    width: 90%;
+    position: relative;
+    border: 1px solid black; 
+    background-color: lightgrey;
+}
+#section3{
+    margin: auto;
+    width: 90%;
+    position: relative;
+    border: 1px solid black;
+    background-color: lightgrey;
+}
+#section1>h3{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    margin: 0;
+    padding: 5px;
+    width: 80px;
+    text-align: center;
+    border: 1px solid black;
+    background-color: rgba(55, 100, 231, 0.8);
+}
+#section2>h3{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    margin: 0;
+    padding: 5px;
+    width: 80px;
+    text-align: center;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 30, 0.8);
+}
+#section3>h3{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    margin: 0;
+    padding: 5px;
+    width: 80px;
+    text-align: center;
+    border: 1px solid black;
+    background-color: rgba(231, 100, 30, 0.8);
+}
+p{
+    
+    padding: 25px 10px 10px 10px;
+    
+   
+}
+#container{
+    width: 100%;
+}
+@media (min-width: 992px){
+    #section1, #section2, #section3 {
+        float: left;
+        width: 33.33%;    
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    #section1 {
+
+        display: flex;
+        float: left;
+        width: 50%;    
+    }
+    #section2 {
+        display: flex;
+        float: left;
+        width: 50%;    
+    }
+    #section3{
+        display: flex;
+        width: 100%;
+    }
+}
+@media (max-width: 767px){
+    #section1 {
+        width: 100%;    
+    }
+    #section2 {
+        width: 100%;    
+    }
+    #section3 {
+        width: 100%;    
+    }
+}
+    </style>
+</head>
+<body>
+    
+    <div id="container">
+        <h1>Our menu</h1>
+        <div id="section1">
+            <h3>Chicken</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus molestiae dicta sapiente quasi voluptatibus qui tenetur nobis debitis et, a voluptatum quis eaque omnis. Totam magnam molestiae sunt ipsa eum.</p>
+        </div>
+        <div id="section2">
+            <h3>Beef</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus molestiae dicta sapiente quasi voluptatibus qui tenetur nobis debitis et, a voluptatum quis eaque omnis. Totam magnam molestiae sunt ipsa eum.</p>
+        </div>
+        <div id="section3">
+            <h3>Sushi</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus molestiae dicta sapiente quasi voluptatibus qui tenetur nobis debitis et, a voluptatum quis eaque omnis. Totam magnam molestiae sunt ipsa eum.</p>
+        </div>
+    </div>
+</body>
+</html>
